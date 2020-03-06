@@ -6,11 +6,11 @@
 
 int main(int argc, char *argv[])
 {
-    const int MAX = 100, MIN = 1; //La valeur généré aléatoirement sera entre 1 et 100
+    const int MAX = 100, MIN = 1; //La valeur gÃ©nÃ©rÃ© alÃ©atoirement sera entre 1 et 100
     int joueur = 0, joueur1 = 0, rng = 0, compteur, nombreJoueurs = 0, rejouer = 0;
 
 
-    //Génération du nombre random
+    //GÃ©nÃ©ration du nombre random
     srand(time(NULL));
     rng = (rand() % (MAX -MIN + 1)) + MIN;
 
@@ -21,14 +21,14 @@ int main(int argc, char *argv[])
     switch (nombreJoueurs)
     {
     case 1:
-    //Tant que la valeur entrée par le joueur est différente de celle généré, la boucle se répéte
+    //Tant que la valeur entrÃ©e par le joueur est diffÃ©rente de celle gÃ©nÃ©rÃ©, la boucle se rÃ©pÃ©te
     for(compteur = 0; joueur != rng; compteur++)
     {
         printf("Entre un nombre entre 1 et 100\n");
         scanf("%d",&joueur);
 
-        /*Si la valeur entrée par le joueur est supérieur à celle généré,
-        afficher "plus", si inférieur "moins" et si égal "bien joué"*/
+        /*Si la valeur entrÃ©e par le joueur est supÃ©rieur Ã  celle gÃ©nÃ©rÃ©,
+        afficher "plus", si infÃ©rieur "moins" et si Ã©gal "bien jouÃ©"*/
         if(joueur < rng)
         {
             printf("Plus!\n");
@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
         label101:
         printf("Le joueur 1 rentre un nombre entre 1 et 100 que le joueur 2 devra deviner\n");
         scanf("%d",&joueur1);
-        system("cls"); //La console sera vidé
+        system("cls"); //La console sera vidÃ©
         if(joueur1>100) goto label101;
 
         for(compteur = 0; joueur != joueur1; compteur++)
@@ -59,8 +59,8 @@ int main(int argc, char *argv[])
         printf("Le joueur 2 entre un nombre entre 1 et 100\n");
         scanf("%d",&joueur);
 
-        /*Si la valeur entrée par le joueur est supérieur à celle généré,
-        afficher "plus", si inférieur "moins" et si égal "bien joué"*/
+        /*Si la valeur entrÃ©e par le joueur est supÃ©rieur Ã  celle gÃ©nÃ©rÃ©,
+        afficher "plus", si infÃ©rieur "moins" et si Ã©gal "bien jouÃ©"*/
         if(joueur < joueur1)
         {
             printf("Plus!\n");
