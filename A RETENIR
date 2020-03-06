@@ -30,3 +30,11 @@ signed char, int, long : nombres entiers
 
 float, double : nombres décimaux/flottants
 
+%d ou %i - int    - entier relatif
+%u       - int    - entier naturel (unsigned)
+%o       - int    - entier exprimé en octal
+%x       - int    - entier exprimé en hexadécimal
+%c       - int    - caractère
+%f       - double - rationnel en notation décimale
+%e       - double - rationnel en notation scientifique
+%s       - char*  - chaîne de caractères
