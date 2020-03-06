@@ -1,0 +1,32 @@
+==
+est égal à
+
+>
+est supérieur à
+
+<
+est inférieur à
+
+>=
+est supérieur ou égal à
+
+<=
+est inférieur ou égal à
+
+!=
+est différent de
+
+&&
+ET
+
+||
+OU
+
+!
+NON
+
+PAR ORDRE CROISSANT :
+signed char, int, long : nombres entiers
+
+float, double : nombres décimaux/flottants
+
