@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[])
+int main()
 {
   int choixMenu;
   
+  while(choixMenu < 1 || choix > 4)
+  {
   printf("=== Menu ===\n\n");
   printf("1. Royal Cheese\n");
   printf("2. Mc Deluxe\n");
@@ -12,7 +14,8 @@ int main(int argc, char *argv[])
   printf("4. Big Mac\n");
   printf("\nVotre choix ? ");
   scanf("%d", &choixMenu);
-  
+  }
+  return main;
   printf("\n");
   
   switch (choixMenu)
