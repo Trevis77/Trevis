@@ -38,3 +38,5 @@ float, double : nombres décimaux/flottants
 %f       - double - rationnel en notation décimale
 %e       - double - rationnel en notation scientifique
 %s       - char*  - chaîne de caractères
+
+for(variable=x;condition;incrémentation ++/--)
