@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
   int chiffre0 = 0;
   int chiffre1 = 0;
 
-  //On demande à l'utilisateur de rentrer les chiffres 1 et 2
+  //On demande Ã  l'utilisateur de rentrer les chiffres 1 et 2
 
   printf("Ecrivez une chiffre\n");
   scanf("%d",&chiffre0);
